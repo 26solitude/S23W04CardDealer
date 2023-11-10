@@ -10,20 +10,69 @@
     <ImageView
         android:id="@+id/img_card1"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:src="@drawable/c_red_joker"
         app:layout_constraintBottom_toTopOf="@id/btn_shuffle"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_card2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_card2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/c_red_joker"
+        app:layout_constraintStart_toEndOf="@id/img_card1"
+        app:layout_constraintEnd_toStartOf="@id/img_card3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_shuffle" />
+
+    <ImageView
+        android:id="@+id/img_card3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/c_red_joker"
+        app:layout_constraintStart_toEndOf="@id/img_card2"
+        app:layout_constraintEnd_toStartOf="@id/img_card4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_shuffle" />
+
+    <ImageView
+        android:id="@+id/img_card4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/c_red_joker"
+        app:layout_constraintStart_toEndOf="@id/img_card3"
+        app:layout_constraintEnd_toStartOf="@id/img_card5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_shuffle" />
+
+    <ImageView
+        android:id="@+id/img_card5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/c_red_joker"
+        app:layout_constraintStart_toEndOf="@id/img_card4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_shuffle" />
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poker Hand: "
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <Button
         android:id="@+id/btn_shuffle"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="섞어섞어버튼"
-        app:layout_constraintTop_toBottomOf="@id/img_card1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
